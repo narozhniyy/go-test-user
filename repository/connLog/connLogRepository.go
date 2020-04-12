@@ -19,7 +19,7 @@ func logFatal(err error) {
 	}
 }
 
-func (r *connLogRepository) Compare(fu string, su string) ([]models.IpOccurrence, error) {
+func (r *connLogRepository) Compare(fu int64, su int64) ([]models.IpOccurrence, error) {
 	var item models.IpOccurrence
 	var ipOccurrences []models.IpOccurrence
 	rows, err := resources.GetDB().Query(`
