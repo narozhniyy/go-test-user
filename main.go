@@ -25,5 +25,5 @@ func main() {
 	// Initialize router with echo framework
 	e := router.InitRouter()
 	// Start server
-	e.Logger.Fatal(e.Start(":8082"))
+	e.Logger.Fatal(e.Start(":12345"))
 }
